@@ -20,15 +20,15 @@
     </style>
 </head>
     <body>
-        <h1>HTML, CSS and JavaScript</h1>
+        <h1 onclick="doStuff();">HTML, CSS and JavaScript</h1>
 
         <h2>HTML</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum ac nulla venenatis tempus. Morbi porta metus ipsum, non venenatis ligula sollicitudin a.</p>
         <ul>
-            <li><strong>Lorem ipsum dolor sit amet?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia nulla, et porta felis.</li>
-            <li class="grey-list"><strong>Consectetur adipiscing elit?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque enim in dolor aliquet lacinia.</li>
-            <li><strong>Mauris porttitor nulla eu?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac placerat erat. Curabitur mollis felis in condimentum consectetur.</li>
-            <li class="grey-list"><strong>Aliquam pretium semper?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat, felis in dictum ullamcorper, mauris felis feugiat lorem, at convallis enim mauris id risus.</li>
+            <li><strong>What is an HTML tag?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia nulla, et porta felis.</li>
+            <li class="grey-list"><strong>What do tags need to be "opened" and "closed"?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque enim in dolor aliquet lacinia.</li>
+            <li><strong>What is an HTML attribute?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac placerat erat. Curabitur mollis felis in condimentum consectetur.</li>
+            <li class="grey-list"><strong>What is an HTML element?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat, felis in dictum ullamcorper, mauris felis feugiat lorem, at convallis enim mauris id risus.</li>
         </ul>
 
         <h2 id="css-heading">CSS</h2>
@@ -40,7 +40,20 @@
         </ul>
 
         <h2>JavaScript</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices auctor purus, nec vulputate dolor interdum in. Donec ut convallis urna, ac facilisis ligula.</p>
+        <ul>
+            <li><strong>Where can you place JavaScript in an HTML page?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia nulla, et porta felis.</li>
+            <li class="grey-list"><strong>How does JavaScript make a web page 'interactive'?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque enim in dolor aliquet lacinia.</li>
+            <li><strong>Mauris porttitor nulla eu?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac placerat erat. Curabitur mollis felis in condimentum consectetur.</li>
+            <li class="grey-list"><strong>What is an 'event' in JavaScript? How could this be used to make things happen?</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat, felis in dictum ullamcorper, mauris felis feugiat lorem, at convallis enim mauris id risus.</li>
+        </ul>
+
+        <script>
+            function doStuff() {
+                body = document.getElementById('css-heading');
+                body.style.color = 'green';
+                body.innerHTML = "Cascading Style Sheets";
+            }
+        </script>
 
     </body>
 </html>
