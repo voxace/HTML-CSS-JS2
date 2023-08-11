@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {
+        .blue-small {
             color: blue;
             font-size: xx-small;
         }
@@ -13,7 +13,13 @@
             font-family: "Comic Sans MS";
             font-size: 20px;
         }
-        
+        .columns {
+            width: 32%;
+            height: 100px;
+            background-color: salmon;
+            float: left;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -21,13 +27,22 @@
     <h2>HTML</h2>
     <ul>
         <li><b>What is an HTML tag?</b><br>This is on a new line</li>
+        <li class="blue-small"><b>What is an HTML tag?</b><br>This is on a new line</li>
         <li><b>What is an HTML tag?</b><br>This is on a new line</li>
         <li><b>What is an HTML tag?</b><br>This is on a new line</li>
-        <li><b>What is an HTML tag?</b><br>This is on a new line</li>        
     </ul>
     <a href="http://www.google.com">This is a link</a>
     <h1>HTML, CSS and JS</h1>
+    <h1 class="blue-small">HTML, CSS and JS</h1>
     <h1>HTML, CSS and JS</h1>
-    <h1>HTML, CSS and JS</h1>
+    <div class="columns">
+        item 1
+    </div>
+    <div class="columns">
+        item 2
+    </div>
+    <div class="columns">
+        item 3
+    </div>
 </body>
 </html>
